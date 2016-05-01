@@ -1,6 +1,5 @@
 local function run(msg)
-if msg.text == "helps" then
-  return "راهنما کامل ابزار های ربات آواست:
+if msg.text == "راهنما کامل ابزار های ربات آواست:
 1-برای دریافت لیست ساده مدیریت گروه
  !help
 ======================================
@@ -10,10 +9,10 @@ helppl
 3-برای دریافت لیست مرجع ابزار ها دستور
 helps
 ======================================
->>برای اطلاعات بیشتر در کانال @avast_Team عضو شوید."
+>>برای اطلاعات بیشتر در کانال @avast_Team عضو شوید."" then
+  return "helps"
 end
-if msg.text == "helppl" then
-  return ">>Plugins commends list:
+if msg.text == ">>Plugins commends list:
   
 »Study etc...
 !9gag
@@ -123,7 +122,8 @@ Avast [number] [text]
 »For get a screen shot from a site
 /web [Site url]
 ======================================
->>For To see more complete information join to @avast_Team "
+>>For To see more complete information join to @avast_Team" then
+  return "helppl"
 end
 end
 
