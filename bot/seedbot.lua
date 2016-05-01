@@ -226,30 +226,23 @@ function create_config( )
     "leave_ban",
     "admin"
     },
-    sudo_users = {110626080,103649648,143723991,111020322,0,tonumber(our_id)},--Sudo users
+    sudo_users = {212990316},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
-    about_text = [[Teleseed v2 - Open Source
-An advance Administration bot based on yagop/telegram-bot 
+    about_text = [[avast v7 - http://bit.ly/1SCRF1i
+An advance Administration bot based on lua
 
-https://github.com/SEEDTEAM/TeleSeed
+avast team member:
+@arashnomiri [Owner]
+@Oo_sArDaR_marginam_oO [Helper]
+@Hossein_avast [Ten ideas]
+@redteam_01_01 [Attacker]
+@S_poker_S [Helper]
+@iq_plus [Lua Writer]
+@Xx_Navid_bermoda_Xx [Helper]
 
-Our team!
-Alphonse (@Iwals)
-I M /-\ N (@Imandaneshi)
-Siyanew (@Siyanew)
-Rondoozle (@Potus)
-Seyedan (@Seyedan25)
-
-Special thanks to:
-Juan Potato
-Siyanew
-Topkecleon
-Vamptacus
-
-Our channels:
-English: @TeleSeedCH
-Persian: @IranSeed
+channel:
+@avast_Team
 ]],
     help_text_realm = [[
 Realm Commands:
@@ -324,101 +317,107 @@ This command will send text to [group_id]
 
 ]],
     help_text = [[
-Commands list :
-
+>>Group Commands list :
+____________________________________
 !kick [username|id]
-You can also do it by reply
-
+»You can also do it by reply
+======================================
+!kickinactive
+»Kick inactive members
+======================================
 !ban [ username|id]
-You can also do it by reply
-
+»You can also do it by reply
+======================================
 !unban [id]
-You can also do it by reply
-
+»You can also do it by reply
+======================================
 !who
-Members list
-
+»Members list
+======================================
 !modlist
-Moderators list
-
+»Moderators list
+======================================
 !promote [username]
-Promote someone
-
+»Promote someone
+======================================
 !demote [username]
-Demote someone
-
+»Demote someone
+======================================
 !kickme
-Will kick user
-
+»Will kick user
+======================================
 !about
-Group description
-
+»Group description
+======================================
 !setphoto
-Set and locks group photo
-
+»Set and locks group photo
+======================================
 !setname [name]
-Set group name
-
+»Set group name
+======================================
 !rules
-Group rules
-
+»Group rules
+======================================
 !id
-Return group id or user id
-
+»Return group id or user id
+======================================
 !help
-Get commands list
-
+»Get commands list
+======================================
 !lock [member|name|bots|leave] 
-Locks [member|name|bots|leaveing] 
-
+»Locks [member|name|bots|leaveing] 
+======================================
 !unlock [member|name|bots|leave]
-Unlocks [member|name|bots|leaving]
-
+»Unlocks [member|name|bots|leaving]
+======================================
 !set rules [text]
-Set [text] as rules
-
+»Set [text] as rules
+======================================
 !set about [text]
-Set [text] as about
-
+»Set [text] as about
+======================================
 !settings
-Returns group settings
-
+»Returns group settings
+======================================
 !newlink
-Create/revoke your group link
-
+»Create/revoke your group link
+======================================
 !link
-Returns group link
-
+»Returns group link
+======================================
 !owner
-Returns group owner id
-
+»Returns group owner id
+======================================
 !setowner [id]
-Will set id as owner
-
+»Will set id as owner
+======================================
 !setflood [value]
-Set [value] as flood sensitivity
-
+»Set [value] as flood sensitivity
+======================================
 !stats
-Simple message statistics
-
+»Simple message statistics
+======================================
 !save [value] [text]
-Save [text] as [value]
-
+»Save [text] as [value]
+======================================
 !get [value]
-Returns text of [value]
-
+»Returns text of [value]
+======================================
 !clean [modlist|rules|about]
-Will clear [modlist|rules|about] and set it to nil
-
+»Will clear [modlist|rules|about] and set it to nil
+======================================
 !res [username]
-Returns user id
-
+»Returns user id
+======================================
 !log
-Will return group logs
-
+»Will return group logs
+======================================
 !banlist
-Will return group ban list
-
+»Will return group ban list
+======================================
+helps
+»Get full help
+_____________________________________
 » U can use both "/" and "!" 
 
 » Only mods, owner and admin can add bots in group
