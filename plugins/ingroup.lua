@@ -1178,7 +1178,7 @@ local function run(msg, matches)
         return "Create a link using /newlink first !"
       end
        savelog(msg.to.id, name_log.." ["..msg.from.id.."] requested group link ["..group_link.."]")
-      return "Group link for '..msg.to.title..'\n_________________\n"..group_link
+      return "📎>Group link:\n_________________________\n"..group_link
     end
 	if matches[1] == 'linkpv' then
       if not is_momod(msg) then
