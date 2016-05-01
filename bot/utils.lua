@@ -951,7 +951,7 @@ function banall_by_reply(extra, success, result)
     local name = user_print_name(result.from)
     banall_user(result.from.id)
     chat_del_user(chat, 'user#id'..result.from.id, ok_cb, false)
-    send_large_msg(chat, "User "..name.."["..result.from.id.."] hammered")
+    send_large_msg(chat, "User "..name.."["..result.from.id.."] Globally banned")
   else
     return 'Use This in Your Groups'
   end
