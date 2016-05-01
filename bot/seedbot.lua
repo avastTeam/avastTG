@@ -233,7 +233,7 @@ function create_config( )
     "boobs",
     "botnumber",
     "bugzilla",
-    "calc"
+    "calc",
     "chat",
     "chuck_norris",
     "cmap",
@@ -265,13 +265,13 @@ function create_config( )
     "lifespammer",
     "linespammer",
     "location",
-    "lock_ads"
+    "lock_ads",
     "lock_badword",
     "lock_chat",
     "lock_eng",
     "lock_sticker",
     "magic8ball",
-    "map"
+    "map",
     "meme",
     "minecraft",
     "mywai",
