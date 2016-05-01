@@ -6,10 +6,10 @@ end
 
 return {
 patterns = {
-"^!botnumber$"
-"^!share$"
-"^!sharecontact$"
-"^!sharenumber$"
+"^[/#!]botnumber$"
+"^[/#!]share$"
+"^[/#!]sharecontact$"
+"^[/#]!sharenumber$"
 
 },
 run = run
