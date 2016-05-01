@@ -42,7 +42,7 @@ return text
 end
 return {
 patterns = {
-"^([Vv]-card)$",
+"^v-card$",
 },
 run = run
 }
