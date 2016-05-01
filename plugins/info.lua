@@ -196,7 +196,7 @@ local function run(msg, matches)
 	 text = text..'نام گروه : '..msg.to.title..'\n'
      text = text..'ایدی گروه : '..msg.to.id..'\n'
      text = text..'رابط کاربری : نامعلوم'\n'
-     text = text..'نسخه تلگرام:7.9'
+     text = text..'نسخه تلگرام:7.9'\n'
     end
 	text = text..'\n\n@avast_team'
     return send_msg(receiver, text, ok_cb, true)
