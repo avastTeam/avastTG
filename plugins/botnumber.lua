@@ -1,7 +1,7 @@
 do
 
 function run(msg, matches)
-send_contact(get_receiver(msg), "+989109396017398", "avast", "@avast_Team", ok_cb, false)
+send_contact(get_receiver(msg), "+989109376691", "αναѕт", "вoт!", ok_cb, false)
 end
 
 return {
