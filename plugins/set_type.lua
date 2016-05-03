@@ -9,11 +9,11 @@ if matches[1] and is_sudo(msg) then
 data[tostring(msg.to.id)]['group_type'] = matches[1]
         save_data(_config.moderation.data, data)
         
-        return 'Group Type Seted To : '..matches[1]
+        return 'حالت گروه ثبت شد به : '..matches[1]
 
 end
 if not is_sudo(msg) then 
-    return 'You Are Not Allow To set Group Type !'
+    return 'فقط مدیران !'
     end
 end
 return {
