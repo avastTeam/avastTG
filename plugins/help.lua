@@ -1,4 +1,4 @@
-!addplug do
+do
  function run(msg, matches)
 if is_momod(msg) then
 return [[
