@@ -220,7 +220,7 @@ local function show_group_settingsmod(msg, data, target)
     	leave_ban = data[tostring(msg.to.id)]['settings']['leave_ban']
    	end
   local settings = data[tostring(target)]['settings']
-  local text = "›Group Settings:\n_____________\n<Kick new member join with link : "..settings.lock_join.."\n>Lock group bad word : "..settings.antifosh.."\n>Lock group chat : "..settings.lock_chat.."\n>Lock group ads : "..settings.antiads.."\n>Lock group name : "..settings.lock_name.."\n>Lock group photo : "..settings.lock_photo.."\n>kick add new member : "..settings.lock_member.."\n>Lock leave : "..leave_ban.."\n>flood set on : "..NUM_MSG_MAX.."\n>Bot can come : "..bots_protection.."\nBot language: fa & en\nGroup model:Normal\nBot version:7.2\navast Bot @avast_Team"
+  local text = "›تنظیمات گروه:\n_________________________\n>قفل عضوگیری گروه : "..settings.lock_join.."\n>قفل فحاشی : "..settings.antifosh.."\n>قفل چت : "..settings.lock_chat.."\n>قفل تبلیغات : "..settings.antiads.."\n>قفل نام گروه : "..settings.lock_name.."\n>قفل عکس گروه : "..settings.lock_photo.."\n>قفل اضافه کردن عضو : "..settings.lock_member.."\n>قفل خروج : "..leave_ban.."\n>حساسیت به اسپم : "..NUM_MSG_MAX.."\n>قفل افزودن ربات : "..bots_protection.."\nزبان ربات : fa & en\nعمل آنتی اسپم: ban\nفیلترینگ کلمات : yes\nقابلیت چت با آواست: yes\nپیام خوش آمد گویی : yes\nحالت گروه : normal\nورژن ربات : 7.2\navast Bot @avast_Team"
   return text
 end
 
