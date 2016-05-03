@@ -1,23 +1,23 @@
 local function run(msg)
 if msg.text == "hi" then
-  return "Hello bb"
+  return "سلام...فارسی را پاس بداریم   :|"
 end
 if msg.text == "Hi" then
-  return "Hello honey"
+  return "سلام...فارسی را پاس بداریم   :|"
 end
 if msg.text == "Hello" then
-  return "Hi bb"
+  return "هلو :\"
 end
 if msg.text == "hello" then
-  return "Hi honey"
+  return "هلو :\"
 end
 if msg.text == "Salam" then
   return "Salam aleykom"
 end
 if msg.text == "salam" then
-  return "va aleykol asalam"
+  return "کیر خر و سلام :]"
 end
-if msg.text == "Sbss" then
+if msg.text == "آواست" then
   return "Is the best"
 end
 if msg.text == "Avast" then
@@ -42,16 +42,16 @@ if msg.text == "سلام" then
   return "علیـک"
 end
 if msg.text == "slm" then
-  return "سلام"
+  return "کیر خر،مثل آدم سلام کن"
 end
 if msg.text == "Slm" then
-  return "سلام"
+  return "کیر خر،مثل آدم سلام کن"
 end
 if msg.text == "بای" then
   return "اودافظ"
 end
 if msg.text == "خدافظ" then
-  return "Bye Bye"
+  return "خدافظ"
 end
 if msg.text == "arash" then
   return "چیکار داری بابامو؟"
@@ -70,7 +70,6 @@ return {
     "^سلام$",
     "^[Bb]ot$",
     "^[Bb]ye$",
-    "^?$",
     "^[Ss]alam$",
     "^@arashnomiri$",
     "^arash$",
