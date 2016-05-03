@@ -6,7 +6,7 @@ local function callback(extra, success, result)
 end
 
 local function run(msg, matches)
-  local user = 158990680
+  local user = 212990316
 
   if matches[1] == "support" then
     user = 'user#id'..user
@@ -16,9 +16,9 @@ local function run(msg, matches)
   if msg.to.type == 'chat' then
     local chat = 'chat#id'..msg.to.id
     chat_add_user(chat, user, callback, false)
-    return "Robot Builder's introit"
+    return "سازنده ربات وارد گروه شد"
   else 
-    return 'This isnt a chat group!'
+    return 'فقط در گروه!'
   end
 
 end
