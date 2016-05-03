@@ -6,7 +6,7 @@ if msg.text == "Hi" then
   return "سلام...فارسی را پاس بداریم   :|"
 end
 if msg.text == "Hello" then
-  return "هلو :\"
+  return "هلو :\ "
 end
 if msg.text == "hello" then
   return "هلو :\"
