@@ -1,8 +1,8 @@
-do
+!addplug do
  function run(msg, matches)
 if is_momod(msg) then
 return [[
->>راهنما دستورات ربات:
+»راهنما دستورات ربات:
 
 » حذف کردن کاربر
 !kick [یوزنیم/یوزر آی دی]
@@ -110,7 +110,7 @@ end
 end
 return {
 patterns = {
-"^[!/#](help)$",
+"^[!/](help)$",
 },
 run = run
 }
