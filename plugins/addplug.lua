@@ -6,7 +6,7 @@ local function run(msg, matches)
     text,b = text:gsub('^!+','')
   end
     if not is_sudo(msg)then
-    return 'plugins ONLY BY SUDO'
+    return 'فقط سودو'
   end
   local name = matches[2]
   local file = io.open("./plugins/"..name..matches[3], "w")
