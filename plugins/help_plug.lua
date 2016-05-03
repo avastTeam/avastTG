@@ -2,117 +2,98 @@ do
  function run(msg, matches)
 if is_momod(msg) then
 return [[ 
->>Plugins commends list:
+لیست ابزار های آواست:
   
-»Study etc...
-!9gag
 ======================================
-»Get Bot ads
+»دریافت متن تبلیغ
 تبلیغ
 ======================================
-»Get currency price
+»دریافت وضعیت ارز
 !arz
 ======================================
-»Get Prayer
-!praytime [City name]
+»دریافت اوقات شرعی
+!praytime [نام شهر]
 ======================================
-»Get porn image
+»دریافت عکس های P.o.r.n
 !boobs
 ======================================
-»Do the math
+»انجام محاسبات ریاضی
 !calc 2+2
 ======================================
-»Get joke via english language
-!chuck
+»دریافت عکس قاره
+نام قاره مورد نطر را به زبان فارسی ارسال کنید
 ======================================
-»Get continents map
-Send continent name via persian language
+»تکرار متن
+!echo [متن]
 ======================================
-»Repeat text
-!echo [text]
+»برای فیلتر کردن کلمه
+filter + [کلمه]
+و برای خارج کردن از فیلتر
+filter - [کلمه]
 ======================================
-»For filter a word send 
-filter + [text]
-and for un filter a word send 
-filter - [text]
+»برای مشاهده اطلاعات یک اکانت گیت هاب
+github [نام پروژه] [نام گیت هاب] 
 ======================================
-»For get gif image
-!gif
+»برای جستوجو در گوگل
+!google [متن]
 ======================================
-»For get about a account of github
-github [Account user name] [project name]
-======================================
-»For searching the web with google
-!google [text]
-======================================
-»For get hack world news
-!hackernews
-======================================
-»For get full help
+»برای مشاهده راهنما کامل
 helps
 ======================================
-»For see about yourself
+»برای دیدن درباره خود
 !info
 ======================================
-»For work with ip
+»برای کار با آیپی
 ip
 config [ip]
 ping [ip]
 getip
 ======================================
-»For get link in privator(Please save bot number)
+»(برای دریافت لینک گروه در خصوصی(لطفا برای جلوگیری از ریپورت شدن ربات شماره ربات را ذخیره کنید
 !linkpv
 ======================================
-»For get map of a area
-!loc [area]
-!gps [area]
-!map [area]
+»برای دریافت نقشه یک مکان
+!loc [نام مکان]
 ======================================
-»For see yourself rank
-!me
+»برای ارسال پیام به تمام اعضای گروه
+!s2a [متن]
 ======================================
-»For read Rss of a site
-!rss sub [site address]
+»برای اسپم دادن از طرف ربات
+!spam [متن اسپم] [تعداد]
+Avast [متن اسپم] [تعداد]
 ======================================
-»Send message to all member of group
-!s2a [text]
-======================================
-»Send spam from bot
-!spam [number] [text]
-Avast [number] [text]
-======================================
-»For get support
+»برای دریافت پشتیبانی پیشرفته
 !support
 ======================================
-»Get username all group member
+»برای دریافت یوزرنیم تمام کاربران
 !tagall .
 ======================================
-»For Text to Photos
-!tex [text]
+»برای تبدیل متن به عکس
+!tex [متن]
 ======================================
-»For get time of a city
-!time [City name]
+»برای دریافت زمان
+!time [نام شهر]
 ======================================
-»For translate a word
-!translate [text]
+»برای ترجمه متن
+!translate [متن]
 ======================================
-»For see about bot
+»برای دیدن متن درباره ربات
 !version
 !avast
 ======================================
-»For translate text to voice
-!voice [text]
+»تبدیل متن به صدا
+!voice [متن]
 ======================================
-»For vote the bot
-!vote [number]
+»برای امتیاز دادن به ربات
+!vote [عدد]
 ======================================
-»For get weather
-!weather [City name]
+»برای دریافت اب و هوا
+!weather [نام شهر]
 ======================================
-»For get a screen shot from a site
-/web [Site url]
+»برای دریافت اسکرین شات از یک سایت
+/web [آدرس سایت]
 ======================================
->>For To see more complete information join to @avast_Team
+>>برای دریافت اطلاعات بیشتر در @avast_Team عضو شوید
 ]]
 end
 end
