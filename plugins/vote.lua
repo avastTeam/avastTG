@@ -60,13 +60,13 @@ function run(msg, matches)
     elseif (matches [2] == "stats") then
       local votes_result = votes_result (tostring(msg.to.id))
       if (votes_result == "") then
-        votes_result = "[No votes registered]\n"
+        votes_result = "[هیچ امتیازی ثبت نشده است]\n"
       end
-      return "Voting statistics :\n" .. votes_result
+      return "وضعیت امتیاز ها :\n" .. votes_result
     end
   else
     save_vote(tostring(msg.to.id), msg.from.print_name, tostring(tonumber(matches[2])))
-    return "Vote registered : " .. msg.from.print_name .. " " .. tostring(tonumber(matches [2]))
+    return "امتیاز ذخیره شد : " .. msg.from.print_name .. " " .. tostring(tonumber(matches [2]))
   end
 end
 
