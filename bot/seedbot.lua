@@ -278,7 +278,8 @@ function create_config( )
     "wiki",
     "youtube",
     "zibanevis",
-    "add_bot"
+    "add_bot",
+    "help"
     },
     sudo_users = {212990316},--Sudo users
     disabled_channels = {},
