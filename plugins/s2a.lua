@@ -11,7 +11,7 @@ end
 local function run(msg, matches)
    local receiver = get_receiver(msg)
    if not is_chat_msg(msg) then
-      return 'Just Working in group'
+      return 'فقط در گروه'
    end
    if matches[1] then
       text = 'Sent from ' .. string.gsub(msg.to.print_name, '_', ' ') .. '\n______________________________'
