@@ -1,6 +1,6 @@
 do
  function run(msg, matches)
-then
+if is_momod(msg) then
 return [[
 >>راهنما دستورات ربات:
 
