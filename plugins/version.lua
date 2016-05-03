@@ -3,13 +3,13 @@ do
 function run(msg, matches)
   return 'avast V7'.. VERSION .. [[ 
  
-  Developer : @arashnomiri
+  توسعه دهنده : @arashnomiri
   
-  Channel : @avast_Team
+  کانال : @avast_Team
   
   http://bit.ly/1SCRF1i
   
-  avast V8
+  avast V7.2
   
   All rights reserved.
   __________________]]
