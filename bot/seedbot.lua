@@ -225,81 +225,48 @@ function create_config( )
     "all",
     "leave_ban",
     "admin",
-    "9gag",
     "addplug",
     "ads",
     "arz",
     "azan",
     "boobs",
     "botnumber",
-    "bugzilla",
     "calc",
     "chat",
-    "chuck_norris",
     "cmap",
     "cpu",
-    "danbooru",
-    "domaintools",
     "downloader",
     "echo",
-    "eur",
-    "exchange",
-    "expand",
-    "face",
     "feedback",
     "filtering",
     "getlink",
-    "giphy",
     "github",
-    "gnuplot",
     "google",
-    "gps",
-    "hackernews",
-    "imdb",
     "img_google",
     "imgdl",
     "info",
     "ip",
-    "isub",
-    "isx",
     "lifespammer",
     "linespammer",
     "location",
     "lock_ads",
     "lock_badword",
     "lock_chat",
-    "lock_eng",
-    "lock_sticker",
-    "magic8ball",
-    "map",
     "meme",
-    "minecraft",
     "mywai",
     "plugins_manager",
-    "pokedex",
     "proid",
     "qrcode",
-    "quotes",
-    "rae",
-    "remind",
-    "roll",
-    "rss",
     "s2a",
-    "search_youtube",
     "sendpl",
     "set_type",
     "setlink",
     "setsticker",
-    "shortlink",
-    "song_search",
-    "steam",
     "support",
     "tagall",
     "text2pic",
     "time",
-    "torrent_search",
     "translate",
-    "trivia",
     "twitter",
     "update",
     "version",
@@ -309,18 +276,17 @@ function create_config( )
     "webshot",
     "welcome",
     "wiki",
-    "xkcd",
-    "yoda",
     "youtube",
-    "zibanevis"
+    "zibanevis",
+    "add_bot"
     },
     sudo_users = {212990316},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
     about_text = [[avast-Bot V7 - http://bit.ly/1SCRF1i
-An advance Administration bot based on lua
+ربات پیشرفته برپایه لوا
 
-avast team member:
+اعضای تیم آواست:
 @arashnomiri
 @Oo_sArDaR_marginam_oO
 @redteam_01_01
@@ -329,7 +295,7 @@ avast team member:
 @iq_plus
 @Xx_Navid_bermoda_Xx
 
-channel:
+کانال:
 @avast_Team
 ]],
     help_text_realm = [[
