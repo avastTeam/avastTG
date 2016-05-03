@@ -69,14 +69,14 @@ end
 
 local function process_google_data(google, receiver, query)
   if google.responseStatus == 403 then
-    local text = 'ERROR: Reached maximum searches per day'
+    local text = 'در امروز از این سایت بیش از حد استفاده شده و جواب گو نیست'
     send_msg(receiver, text, ok_cb, false)
 
   elseif google.responseStatus == 200 then
     local data = google.responseData
 
     if not data or not data.results or #data.results == 0 then
-      local text = 'Image not found.'
+      local text = 'عکس پیدا نشد.'
       send_msg(receiver, text, ok_cb, false)
       return false
     end
