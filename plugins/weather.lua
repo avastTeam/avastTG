@@ -1,11 +1,10 @@
-do
 
 local BASE_URL = "http://api.openweathermap.org/data/2.5/weather"
 
 local function get_weather(location)
   print("Finding weather in ", location)
   local url = BASE_URL
-  url = url..'?q='..location
+  url = url..'?q='..location..'&APPID=eedbc05ba060c787ab0614cad1f2e12b'
   url = url..'&units=metric'
 
   local b, c, h = http.request(url)
@@ -14,46 +13,36 @@ local function get_weather(location)
   local weather = json:decode(b)
   local city = weather.name
   local country = weather.sys.country
-  local temp = 'The temperature in '..city
-    ..' (' ..country..')'
-    ..' is '..weather.main.temp..'°C'
-  local conditions = 'Current conditions are: '
-    .. weather.weather[1].description
-  
+  local temp = 'دمای شهر '..city..'\n\n🌡 دمای کنونی هوا : '..weather.main.temp..' C\n\nفشار هوا :'..weather.main.pressure..'\nرطوبت هوا : '..weather.main.humidity..' %\n\n🔻حداقل دمای امروز : '..weather.main.temp_min..'\n🔺حداکثر دمای امروز : '..weather.main.temp_min..'\n\n🌬 سرعت باد : '..weather.wind.speed..'\nدرجه وزش باد : '..weather.wind.deg..'\n\n🔸طول جغرافیایی : '..weather.coord.lon..'\n🔹عرض جغرافیایی : '..weather.coord.lat
+  local conditions = 'شرایط فعلی آب و هوا : '
+
   if weather.weather[1].main == 'Clear' then
-    conditions = conditions .. ' ☀'
+    conditions = conditions .. 'آفتابی ☀'
   elseif weather.weather[1].main == 'Clouds' then
-    conditions = conditions .. ' ☁☁'
+    conditions = conditions .. 'ابری ☁☁'
   elseif weather.weather[1].main == 'Rain' then
-    conditions = conditions .. ' ☔'
+    conditions = conditions .. 'بارانی ☔'
   elseif weather.weather[1].main == 'Thunderstorm' then
-    conditions = conditions .. ' ☔☔☔☔'
+    conditions = conditions .. 'طوفانی 🌪🌪🌪🌪'
+  elseif weather.weather[1].main == 'Mist' then
+    conditions = conditions .. 'مه 🌫'
   end
 
-  return temp .. '\n' .. conditions
+  return temp .. '\n\n' .. conditions..'\n\n@avast_Team'
 end
-
-local function run(msg, matches)
-  local city = 'tehran'
-
-  if matches[1] ~= '!weather' then 
+local function run(msg, matches) 
     city = matches[1]
+  local wtext = get_weather(city)
+  if not wtext then
+    wtext = 'مکان وارد شده صحیح نیست'
   end
-  local text = get_weather(city)
-  if not text then
-    text = 'Can\'t get weather from that city.'
-  end
-  return text
+  return wtext
 end
 
 return {
-  description = "weather in that city (Yogyakarta is default)", 
-  usage = "!weather (city)",
-  patterns = {
-    "^!weather$",
-    "^!weather (.*)$"
-  }, 
-  run = run 
-}
 
-end
+  patterns = {
+   "^[/#!]weather (.*)$",
+    },
+  run = run
+}
