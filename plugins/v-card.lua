@@ -37,6 +37,11 @@ Name: NAVID avast
 Username: @Xx_Navid_bermoda_Xx
 Rank: Admin
 Phone number: +989019557405
+-----------------------
+Name: Mohammad avast
+Username: @wqwq2112
+Rank: Admin
+Phone number: +989306159984
 ]]
 return text
 end
