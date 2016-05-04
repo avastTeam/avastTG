@@ -166,8 +166,6 @@ local function run(msg, matches)
    local text = 'نام : '..(msg.from.first_name or 'ندارد')..'\n'
    local text = text..'فامیل : '..(msg.from.last_name or 'ندارد')..'\n'	
    local text = text..'یوزر : '..Username..'\n'
-   local text = text..'مکان : Iran\n'
-   local text = text..'سیم کارت: نامعلوم\n'
    local text = text..'ایدی کاربری : '..msg.from.id..'\n\n'
    local hash = 'rank:'..msg.to.id..':variables'
 	if hash then
@@ -197,7 +195,6 @@ local function run(msg, matches)
 	 if msg.to.type == 'chat' then
 	 text = text..'نام گروه : '..msg.to.title..'\n'
      text = text..'ایدی گروه : '..msg.to.id..'\n'
-     text = text..'شماره تلفن: +"..(msg.from.phone or '')\n'
      
      text = text..'رابط کاربری : نامعلوم'
     end
