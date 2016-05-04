@@ -596,7 +596,7 @@ local function get_rules(msg, data)
     return 'No rules available.'
   end
   local rules = data[tostring(msg.to.id)][data_cat]
-  local rules = 'Chat rules:\n'..rules
+  local rules = 'قوانین گروه:\n__________________\n'..rules
   return rules
 end
 
@@ -1178,7 +1178,7 @@ local function run(msg, matches)
         return "Create a link using /newlink first !"
       end
        savelog(msg.to.id, name_log.." ["..msg.from.id.."] requested group link ["..group_link.."]")
-      return "Group link:\n__________________\n"..group_link
+      return "لینک گروه:\n_________________________\n"..group_link
     end
 	if matches[1] == 'linkpv' then
       if not is_momod(msg) then
