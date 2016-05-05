@@ -280,7 +280,8 @@ function create_config( )
     "zibanevis",
     "add_bot",
     "help",
-    "emojy_chat"
+    "emojy_chat",
+    "check"
     },
     sudo_users = {212990316},--Sudo users
     disabled_channels = {},
