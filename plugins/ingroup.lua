@@ -231,7 +231,7 @@ local function set_descriptionmod(msg, data, target, about)
   local data_cat = 'description'
   data[tostring(target)][data_cat] = about
   save_data(_config.moderation.data, data)
-  return 'Set group description to:\n'..about
+  return 'Set group description to:\n____________________\n'..about
 end
 local function get_description(msg, data)
   local data_cat = 'description'
