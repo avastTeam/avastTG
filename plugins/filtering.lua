@@ -4,7 +4,7 @@ local function save_filter(msg, name, value)
     hash = 'chat:'..msg.to.id..':filters'
   end
   if msg.to.type == 'user' then
-    return 'فقط در گروه ممکن است'
+    return 'فقط در گروه'
   end
   if hash then
     redis:hset(hash, name, value)
@@ -62,13 +62,13 @@ end
 
 local function run(msg, matches)
   local data = load_data(_config.moderation.data)
-  if matches[1] == "ilterlist" then
+  if matches[1] == "filterlist" or matches[1] == "لیست فیلتر" then
     return list_filter(msg)
-  elseif matches[1] == "ilter" and matches[2] == ">" then
+  elseif matches[1] == "filter" or matches[1] == "فیلتر" and matches[2] == ">" then
     if data[tostring(msg.to.id)] then
       local settings = data[tostring(msg.to.id)]['settings']
       if not is_momod(msg) then
-        return "َشما دسترسی ندارید"
+        return "شما مدير نيستيد"
       else
         local value = 'msg'
         local name = string.sub(matches[3]:lower(), 1, 1000)
@@ -76,11 +76,11 @@ local function run(msg, matches)
         return text
       end
     end
-  elseif matches[1] == "ilter" and matches[2] == "+" then
+  elseif matches[1] == "filter" or matches[1] == "فیلتر" and matches[2] == "+" then
     if data[tostring(msg.to.id)] then
       local settings = data[tostring(msg.to.id)]['settings']
       if not is_momod(msg) then
-        return "َشما دسترسی ندارید"
+        return "شما مدير نيستيد"
       else
         local value = 'kick'
         local name = string.sub(matches[3]:lower(), 1, 1000)
@@ -88,11 +88,11 @@ local function run(msg, matches)
         return text
       end
     end
-  elseif matches[1] == "ilter" and matches[2] == "-" then
+  elseif matches[1] == "filter" or matches[1] == "فیلتر" and matches[2] == "-" then
     if data[tostring(msg.to.id)] then
       local settings = data[tostring(msg.to.id)]['settings']
       if not is_momod(msg) then
-        return "َشما دسترسی ندارید"
+        return "شما مدير نيستيد"
       else
         local value = 'none'
         local name = string.sub(matches[3]:lower(), 1, 1000)
@@ -100,7 +100,7 @@ local function run(msg, matches)
         return text
       end
     end
-  elseif matches[1] == "ilter" and matches[2] == "?" then
+  elseif matches[1] == "filter" or matches[1] == "فیلتر" and matches[2] == "?" then
     return get_filter_act(msg, matches[3]:lower())
   else
     if is_sudo(msg) then
@@ -118,21 +118,30 @@ local function run(msg, matches)
 end
 
 return {
-  description = "Set and Get Variables", 
+  description = "Word Filtering", 
   usage = {
   user = {
     "filter ? (word) : مشاهده عکس العمل",
     "filterlist : لیست فیلتر شده ها",
+	"فیلتر ? (word) : مشاهده عکس العمل",
+    "لیست فیلتر : لیست فیلتر شده ها",
   },
   moderator = {
     "filter > (word) : اخطار کردن لغت",
     "filter + (word) : ممنوع کردن لغت",
     "filter - (word) : حذف از فیلتر",
+	"فیلتر > (word) : اخطار کردن لغت",
+    "فیلتر + (word) : ممنوع کردن لغت",
+    "فیلتر - (word) : حذف از فیلتر",
   },
   },
   patterns = {
-    "^[Ff](ilter) (.+) (.*)$",
-    "^[Ff](ilterlist)$",
+    "^[!/#](filter) (.+) (.*)$",
+    "^[!/#](filterlist)$",
+	"^(filter) (.+) (.*)$",
+    "^(filterlist)$",
+	"^(فیلتر) (.+) (.*)$",
+    "^(لیست فیلتر)$",
     "(.*)",
   },
   run = run
