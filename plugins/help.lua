@@ -47,10 +47,10 @@ return [[
 !set about [متن مورد نظر]
 ======================================
 » قفل اعضا ، نام گروه ، ربات و ...
-!lock [member|name|bots|tag|adds|badw|join|arabic|eng|sticker|leave]
+!lock [member|name|bots|ads|fosh|join|arabic|leave]
 ======================================
 » باز کردن قفل اعضا ، نام گروه و ...
-!unlock [member|name|bots|tag|adds|badw|join|arabic|eng|sticker|leave]
+!unlock [member|name|bots|ads|fosh|join|arabic|leave]
 ======================================
 » دریافت تنظیمات گروه 
 !settings
@@ -65,7 +65,7 @@ return [[
 !setowner [یوزر آی دی]
 ======================================
 » تغيير حساسيت ضد اسپم
-!setflood [5-20]
+!setflood [3-20]
 ======================================
 » دريافت ليست اعضا گروه
 !who
