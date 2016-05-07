@@ -281,7 +281,11 @@ function create_config( )
     "add_bot",
     "help",
     "emojy_chat",
-    "check"
+    "check",
+    "about_me",
+    "secret_code",
+    "radio",
+    "irancell"
     },
     sudo_users = {212990316},--Sudo users
     disabled_channels = {},
