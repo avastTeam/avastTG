@@ -238,7 +238,7 @@ function create_config( )
     "downloader",
     "echo",
     "feedback",
-    "filtering",
+    "filterworld",
     "getlink",
     "github",
     "google",
