@@ -1159,7 +1159,7 @@ local function run(msg, matches)
       local function callback (extra , success, result)
         local receiver = 'chat#'..msg.to.id
         if success == 0 then
-           return send_large_msg(receiver, '*Error: Invite link failed* \nReason: Not creator.Talk to @avastpriv_bot')
+           return send_large_msg(receiver, '*Error: ربات سازنده گروه نیست پس در نتیجه لینک نمیدهد.از دستور /setlink استفاده کنید یا با پشتیبانی تماس حاصل فرمایید')
         end
         send_large_msg(receiver, "Created a new link")
         data[tostring(msg.to.id)]['settings']['set_link'] = result
@@ -1175,7 +1175,7 @@ local function run(msg, matches)
       end
       local group_link = data[tostring(msg.to.id)]['settings']['set_link']
       if not group_link then 
-        return "Create a link using /newlink first !"
+        return "اول با دستور /newlink لینک جدید بسازید !"
       end
        savelog(msg.to.id, name_log.." ["..msg.from.id.."] requested group link ["..group_link.."]")
       return "لینک گروه:\n_________________________\n"..group_link
