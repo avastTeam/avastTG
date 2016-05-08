@@ -18,13 +18,8 @@ Username: @redteam_01_01
 Rank: Admin
 Phone number: +1 646 583 5623
 -----------------------
-Name: Hossein avast
-Username: @Hossein_avast 
-Rank: Admin
-Phone number: +989302482378
------------------------
 Name: Mostafa avast
-Username: @S_poker_S 
+Username: @Pukeram 
 Rank: Admin
 Phone number: +989330661790
 -----------------------
@@ -33,15 +28,12 @@ Username: @iq_plus
 Rank: Admin
 Phone number: —-
 -----------------------
-Name: NAVID avast
-Username: @Xx_Navid_bermoda_Xx
+Name: Dr.Cyber
+Username: @DrCyber1736
 Rank: Admin
-Phone number: +989019557405
------------------------
-Name: Mohammad avast
-Username: @wqwq2112
-Rank: Admin
-Phone number: +989306159984
+Phone number: +989114661736
+_____________________
+نکته:این افراد تنها ادمین ها و اعضای رسمی تیم هستند
 ]]
 return text
 end
