@@ -298,10 +298,10 @@ function create_config( )
 @arashnomiri
 @Oo_sArDaR_marginam_oO
 @redteam_01_01
-@Hossein_avast
 @S_poker_S
 @iq_plus
-@Xx_Navid_bermoda_Xx
+@negative_officiall
+@DrCyber1736
 
 کانال:
 @avast_Team
