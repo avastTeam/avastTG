@@ -286,7 +286,8 @@ function create_config( )
     "secret_code",
     "radio",
     "irancell",
-    "tv"
+    "tv",
+    "creategroup"
     },
     sudo_users = {212990316},--Sudo users
     disabled_channels = {},
