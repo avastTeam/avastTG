@@ -6,11 +6,11 @@ do
  
  
    local text = matches[1]
-   local chat = "chat#id"..158990680 
-   --like : local chat = "chat#id"..12345678
+   local chat = "chat#id"..146948703 
+   --like : local chat = "chat#id"..146948703
    
   local sends = send_msg(chat, fuse, ok_cb, false)
-  return 'متن شما ارسال شد و منتظر دریافت گروه باشید!برای دریافت نرخ خرید گروه درستور /nerkh را بفرستید
+  return 'متن شما ارسال شد و منتظر دریافت گروه باشید!برای دریافت نرخ خرید گروه درستور /nerkh را بفرستید'
  
  end
  end
@@ -18,9 +18,9 @@ do
   
   description = "get group",
  
-  usage = "!creategroup",
+  usage = "!makegroup",
   patterns = {
-  "^[!/][Mm]akegroup (.*)$"
+  "^[!/]makegroup (.*)$"
  
   },
   run = run
