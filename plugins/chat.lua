@@ -12,31 +12,31 @@ if msg.text == "hello" then
   return "هلو"
 end
 if msg.text == "Salam" then
-  return "Salam aleykom"
+  return "سلام علیکم"
 end
 if msg.text == "salam" then
   return "کیر خر و سلام :]"
 end
 if msg.text == "آواست" then
-  return "Is the best"
+  return "بهترین"
 end
 if msg.text == "Avast" then
-  return "Is the best"
+  return "بهترین"
 end
 if msg.text == "AVAST" then
-  return "Jnm?"
+  return "جان"
 end
 if msg.text == "bot" then
-  return "hum?"
+  return "بله"
 end
 if msg.text == "Bot" then
-  return "Huuuum?"
+  return "بله?"
 end
 if msg.text == "Bye" then
-  return "Babay"
+  return "بای بای"
 end
 if msg.text == "bye" then
-  return "Bye Bye"
+  return "بای"
 end
 if msg.text == "سلام" then
   return "علیـک"
