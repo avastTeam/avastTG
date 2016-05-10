@@ -830,7 +830,7 @@ end
 function banall_list() 
   local hash =  'gbanned'
   local list = redis:smembers(hash)
-  local text = "global bans !\n\n"
+  local text = "هیچ عضو بن شده ای وجود ندارد !\n\n"
   for k,v in pairs(list) do
  		local user_info = redis:hgetall('user:'..v)
 -- 		vardump(user_info)
@@ -879,14 +879,14 @@ function Kick_by_reply_admins(extra, success, result)
   if result.to.type == 'chat' then
     local chat = 'chat#id'..result.to.id
     if tonumber(result.from.id) == tonumber(our_id) then -- Ignore bot
-      return "I won't kick myself"
+      return "من نمیتوانم خود را کیک کنم"
     end
     if is_admin2(result.from.id) then -- Ignore admins
       return
     end
     chat_del_user(chat, 'user#id'..result.from.id, ok_cb, false)
   else
-    return 'Use This in Your Groups'
+    return 'این را در گروه خود استفاده کنید'
   end
 end
 
@@ -895,15 +895,15 @@ function ban_by_reply(extra, success, result)
   if result.to.type == 'chat' then
   local chat = 'chat#id'..result.to.id
   if tonumber(result.from.id) == tonumber(our_id) then -- Ignore bot
-      return "I won't ban myself"
+      return "من نمیتوانم خود را بن کنم"
   end
   if is_momod2(result.from.id, result.to.id) then -- Ignore mods,owner,admin
-    return "you can't kick mods,owner and admins"
+    return "شما نمیتوانید ادمین ها و صاحبان گروه را بن کنید"
   end
   ban_user(result.from.id, result.to.id)
   send_large_msg(chat, "کاربر "..result.from.id.." بن شد")
   else
-    return 'Use This in Your Groups'
+    return 'این را در گروه خود استفاده کنید'
   end
 end
 
@@ -912,7 +912,7 @@ function ban_by_reply_admins(extra, success, result)
   if result.to.type == 'chat' then
     local chat = 'chat#id'..result.to.id
     if tonumber(result.from.id) == tonumber(our_id) then -- Ignore bot
-      return "I won't ban myself"
+      return "من نمیتوانم خود را بن کنم"
     end
     if is_admin2(result.from.id) then -- Ignore admins
       return
@@ -920,7 +920,7 @@ function ban_by_reply_admins(extra, success, result)
     ban_user(result.from.id, result.to.id)
     send_large_msg(chat, "کاربر "..result.from.id.." بن شد")
   else
-    return 'Use This in Your Groups'
+    return 'در گروه خود استفاده کنید'
   end
 end
 
@@ -929,21 +929,21 @@ function unban_by_reply(extra, success, result)
   if result.to.type == 'chat' then
     local chat = 'chat#id'..result.to.id
     if tonumber(result.from.id) == tonumber(our_id) then -- Ignore bot
-      return "I won't unban myself"
+      return "من خود را نمیتوانم بن یا از بن خارج کنم"
     end
     send_large_msg(chat, "کاربر "..result.from.id.." از بن خارج شد")
     -- Save on redis
     local hash =  'banned:'..result.to.id
     redis:srem(hash, result.from.id)
   else
-    return 'Use This in Your Groups'
+    return 'این را در گروه خود استفاده کنید'
   end
 end
 function banall_by_reply(extra, success, result)
   if result.to.type == 'chat' then
     local chat = 'chat#id'..result.to.id
     if tonumber(result.from.id) == tonumber(our_id) then -- Ignore bot
-      return "I won't banall myself"
+      return "من خود را نمیتوانم بن کنم"
     end
     if is_admin2(result.from.id) then -- Ignore admins
       return 
@@ -953,6 +953,6 @@ function banall_by_reply(extra, success, result)
     chat_del_user(chat, 'user#id'..result.from.id, ok_cb, false)
     send_large_msg(chat, "کاربر "..name.."["..result.from.id.."] بصورت جهانی بن شد")
   else
-    return 'Use This in Your Groups'
+    return 'این را در گروه استفاده کنید'
   end
 end
