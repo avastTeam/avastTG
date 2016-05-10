@@ -52,7 +52,7 @@ local function run(msg, matches)
     local receiver = get_receiver(msg)
     send_photo_from_url(receiver, url)
   else
-    return 'Error getting boobs/butts for you, please try again later.' 
+    return 'مشکلی در دریافت عکس پیش آمده.لطفا دوباره تلاش کنید.' 
   end
 end
 
