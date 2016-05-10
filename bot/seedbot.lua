@@ -280,6 +280,7 @@ function create_config( )
     "zibanevis",
     "add_bot",
     "help",
+    "helps",
     "emojy_chat",
     "check",
     "about_me",
@@ -287,12 +288,12 @@ function create_config( )
     "radio",
     "irancell",
     "tv",
-    "creategroup"
+    "help_plug"
     },
     sudo_users = {212990316},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
-    about_text = [[avast-Bot V7 - http://bit.ly/1SCRF1i
+    about_text = [[avast-Bot V7.5 - http://bit.ly/1SCRF1i
 ربات پیشرفته برپایه لوا
 
 اعضای تیم آواست:
