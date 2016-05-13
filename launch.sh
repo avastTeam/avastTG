@@ -5,7 +5,7 @@ cd $THIS_DIR
 
 update() {
   git pull
-  git submodule update —init —recursive
+  git submodule update --init --recursive
   install_rocks
 }
 
@@ -17,7 +17,7 @@ install_luarocks() {
 
   PREFIX="$THIS_DIR/.luarocks"
 
-  ./configure —prefix=$PREFIX —sysconfdir=$PREFIX/luarocks —force-config
+  ./configure --prefix=$PREFIX --sysconfdir=$PREFIX/luarocks --force-config
 
   RET=$?; if [ $RET -ne 0 ];
     then echo "Error. Exiting."; exit $RET;
@@ -76,8 +76,8 @@ install_rocks() {
 
 install() {
   git pull
-  git submodule update —init —recursive
-  patch -i "patches/disable-python-and-libjansson.patch" -p 0 —batch —forward
+  git submodule update --init --recursive
+  patch -i "patches/disable-python-and-libjansson.patch" -p 0 --batch --forward
   RET=$?;
 
   cd tg
