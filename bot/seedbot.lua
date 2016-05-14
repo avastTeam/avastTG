@@ -232,32 +232,15 @@ function create_config( )
 	"whitelist",
 	"msg_checks"
     },
-    sudo_users = {110626080,103649648,111020322,0,tonumber(our_id)},--Sudo users
+    sudo_users = {212990316},--Sudo users
     moderation = {data = 'data/moderation.json'},
-    about_text = [[Teleseed v4
+    about_text = [[avast-BOT V2
 An advanced administration bot based on TG-CLI written in Lua
 
-https://github.com/SEEDTEAM/TeleSeed
+Developed and created by @avast_Team
 
-Admins
-@iwals [Founder]
-@imandaneshi [Developer]
-@POTUS [Developer]
-@seyedan25 [Manager]
-@aRandomStranger [Admin]
-
-Special thanks to
-awkward_potato
-Siyanew
-topkecleon
-Vamptacus
-
-Our channels
-@teleseedch [English]
-@iranseed [persian]
-
-Our website 
-http://teleseed.seedteam.org/
+website:
+http://avastteam.r98.ir
 ]],
     help_text_realm = [[
 Realm Commands:
@@ -343,49 +326,49 @@ This command will send text to [group_id]
 *Only admins and sudo can use res, setowner, commands
 ]],
     help_text = [[
-Commands list :
+لیست دستورات گروه :
 
 !kick [username|id]
-You can also do it by reply
+حذف یک عضو از گروه
 
 !ban [ username|id]
-You can also do it by reply
+حذف مادامالعمر یک عضو از گروه
 
 !unban [id]
-You can also do it by reply
+خارج کردن از بن
 
 !who
-Members list
+دریافت لیست اعضا در قالب فایل
 
 !modlist
-Moderators list
+لیست مدیران
 
 !promote [username]
-Promote someone
+ترفیع دادن
 
 !demote [username]
-Demote someone
+تنزل دادن
 
 !kickme
-Will kick user
+خروج از گروه
 
 !about
-Group description
+دریافت درباره گروه
 
 !setphoto
-Set and locks group photo
+تنظیم عکس گروه
 
 !setname [name]
-Set group name
+تنظیم نام گروه
 
 !rules
-Group rules
+دریافت قوانین گروه
 
 !id
-return group id or user id
+دریافت آیدی
 
 !help
-Returns help text
+دریافت متن راهنما یا همین متن
 
 !lock [links|flood|spam|Arabic|member|rtl|sticker|contacts|strict]
 Lock group settings
