@@ -1,7 +1,7 @@
 do
 
 function run(msg, matches)
-  return 'avast V7'.. VERSION .. [[ 
+  return 'avast V7.5'.. VERSION .. [[ 
  
   توسعه دهنده : @arashnomiri
   
@@ -9,7 +9,7 @@ function run(msg, matches)
   
   http://bit.ly/1SCRF1i
   
-  avast V7.2
+  avast V7.5
   
   All rights reserved.
   __________________]]
